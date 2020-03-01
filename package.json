@@ -1,0 +1,51 @@
+{
+  "name": "react-hackernews",
+  "version": "1.0.0",
+  "description": "Simple hacker news clone built with React",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV='production' webpack"
+  },
+  "babel": {
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "syntax-dynamic-import"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kish-an/react-hackernews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kish-an/react-hackernews/issues"
+  },
+  "homepage": "https://github.com/kish-an/react-hackernews#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "query-string": "^6.11.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-icons": "^3.9.0",
+    "react-router-dom": "^5.1.2"
+  }
+}
