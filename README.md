@@ -1,2 +1,2 @@
 # react-hackernews
-Simple hacker news clone built with React
+https://hackernews-react-clone.netlify.com/
