@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Stories from './components/Stories';
 import Nav from './components/Nav';
 import { ThemeProvider } from './contexts/theme';
+import User from './components/User';
 
 const App = () => {
     const [theme, setTheme] = useState('light');
@@ -31,6 +32,7 @@ const App = () => {
                                 path='/new'
                                 render={props => <Stories {...props} type='new' />}
                             />
+                            <Route path='/user' component={User} />
                             <Route render={() => <h1 style={{ textAlign: 'center', color: '#c0392b' }}>🚨 404: Page not found!</h1>} />
                         </Switch>
                     </div>
