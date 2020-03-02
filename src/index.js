@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Stories from './components/Stories';
 
 const App = () => {
     return (
-        <div>
-            Hello, world!
+        <div className="container">
+            <Stories type='top' />
         </div>
     )
 }
