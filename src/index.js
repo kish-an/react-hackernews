@@ -6,6 +6,7 @@ import Stories from './components/Stories';
 import Nav from './components/Nav';
 import { ThemeProvider } from './contexts/theme';
 import User from './components/User';
+import StoryComments from './components/StoryComments';
 
 const App = () => {
     const [theme, setTheme] = useState('light');
@@ -33,6 +34,7 @@ const App = () => {
                                 render={props => <Stories {...props} type='new' />}
                             />
                             <Route path='/user' component={User} />
+                            <Route path='/post' component={StoryComments} />
                             <Route render={() => <h1 style={{ textAlign: 'center', color: '#c0392b' }}>🚨 404: Page not found!</h1>} />
                         </Switch>
                     </div>

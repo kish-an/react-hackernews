@@ -22,6 +22,10 @@ ul {
     list-style: none;
 }
 
+a {
+    color: inherit;
+}
+
 .dark {
     background: #1c2022;
     color: rgb(203, 203, 203);
@@ -69,6 +73,10 @@ ul {
     margin: 1.25rem 0;
 }
 
+.post-title {
+    margin-bottom: 0.15rem;
+}
+
 .post-info {
     margin: 0.2rem 0;
     color: #808e9b;
@@ -91,4 +99,21 @@ ul {
 
 .username {
     margin-bottom: 0.2rem;
+}
+
+.comment {
+    padding: 0.65rem;
+    margin: 1rem 0;
+    border-radius: 3px;
+    background: #f1f2f6;
+    transition: transform 0.4s ease;
+}
+
+.comment:hover {
+    transform: scale(1.01);
+}
+
+.dark .comment {
+    background: #3535358c;
+    color: #DADADA;
 }
