@@ -9,11 +9,17 @@ const fetchStoriesReducer = (state, action) => {
                 error: null,
                 posts: action.posts
             }
-        case error:
+        case 'error':
             return {
                 ...state,
                 error: action.errorMessage,
                 loading: false
+            }
+        case 'reset':
+            return {
+                loading: true,
+                error: null,
+                stories: [],
             }
         default:
             throw new Error(`Action type: ${action.type} is not supported!`);
@@ -37,8 +43,10 @@ const useFetchStories = type => {
             }))
             .catch(err => dispatch({
                 type: 'error',
-                errorMessage: err,
+                errorMessage: err.message,
             }));
+
+        return () => dispatch({ type: 'reset' });
     }, [type]);
 
     return state;
