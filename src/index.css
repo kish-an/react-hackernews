@@ -23,8 +23,13 @@ ul {
 }
 
 .dark {
-    background: #2f3640;
-    color: #DADADA;
+    background: #1c2022;
+    color: rgb(203, 203, 203);
+    min-height: 100%;
+}
+
+.dark .post-info a {
+    color: rgb(203, 203, 203);
 }
 
 .container {
@@ -72,4 +77,10 @@ ul {
 
 .post-info a {
     color: #1e272e;
+}
+
+.btn-clear {
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
